@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de la Pelota Saltarina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <header class="hud">
+      <span>Puntos: <strong id="score">0</strong></span>
+      <span>Récord: <strong id="high-score">0</strong></span>
+    </header>
+
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas" width="800" height="300"></canvas>
+      <div id="overlay" class="overlay hidden">
+        <h2 id="overlay-title">¡Juego Terminado!</h2>
+        <p id="overlay-text">Presiona Espacio o haz clic para reiniciar</p>
+        <button id="restartBtn" type="button">Jugar de nuevo</button>
+      </div>
+    </div>
+
+    <p class="controls-hint">
+      Controles: <strong>Espacio</strong>, <strong>Flecha Arriba</strong> o <strong>Clic / Toque</strong> para saltar.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
